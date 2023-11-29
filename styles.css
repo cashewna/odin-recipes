@@ -1,12 +1,32 @@
 :root {
     background-color: #E7EEF5FF;
+    --off-black: #444;
 }
 
 body {
-    margin: 40px auto;
-    max-width: 650px;
     line-height: 1.6;
     font-size: 18px;
-    color: #444;
+    color: var(--off-black);
+    margin: 0;
+}
+
+header {
+    margin-bottom: 2em;
+    padding: 1em 8rem;
+    border-bottom: 1px solid var(--off-black);
+}
+
+section {
+    max-width: 650px;
+    margin: 40px auto;
     padding: 0 10px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1em 8rem;
+    border-top: 1px solid var(--off-black);
 }
